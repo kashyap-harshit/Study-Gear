@@ -1,0 +1,873 @@
+
+@media only screen and (max-width: 1366px){
+	.myList img{
+		width: 5.7%;
+	}
+	.cards{
+		margin: 5% 70px;
+	}
+	.cardsTopBig{
+		margin: 0px 42vh;
+	}
+	.aboutPara{
+	    margin: 0px 48vh;
+	}
+	.whatRVS{
+		font-size: 17px;
+	}
+	.whatRVB {
+    	font-size: 30px;
+	}
+	#contactMe{
+		margin: 0 23vh;
+	}
+}
+
+@media only screen and (max-width: 1280px){
+	.myList img{
+		width: 6.6%;
+	}
+	.cardsTopBig {
+    	margin: 0px 49vh;
+	}
+	.aboutPara {
+    	margin: 0px 55vh;
+	}
+}
+
+@media only screen and (max-width: 1024px), @media only screen and (max-width: 1366px){ /*for ipad vertical and horizontal*/
+	.cardsTopBig{
+		margin: 0px 20vh;
+	}
+	.aboutPara{
+		margin: 0px 25vh;
+	}
+
+	#contactMe p{
+		margin: 9px 12vh 13px;
+	}
+	#contactSubmit{
+		margin: 27px 17vh 18px;
+	}
+	.cardsTop{
+		margin-top: 14vh;
+	}
+	#about{
+		margin-top: 9vh;
+	}
+	#contactForm{
+		margin-top: 17vh;
+	}
+	.imgModOrg {
+    	margin: 6px 0px 3px 12px;
+	}
+	#contactMe{
+		margin: 0 13vh;
+	}
+
+}
+
+@media only screen and (max-width: 1024px){
+	.cards{
+		margin: 5% 19px;
+	}
+
+}
+
+@media only screen and (max-height: 768px){
+	#contactSubmit {
+    	margin: 27px 35vh 18px;
+	}
+	#contactMe {
+    	margin: 0 21vh;
+	}
+	#contactMe p {
+	}
+	.cardsTopBig {
+    	margin: 0px 35vh;
+	}
+	.cardsSmallDiv img{
+		height: 50px;
+	}
+	.aboutPara{
+		margin: 0px 44vh;
+	}
+}
+
+
+@media only screen and (max-width: 1000px){
+	.imgModOrg {
+    	margin: 6px 0px 3px 0px;
+	}
+}
+
+@media only screen and (max-width: 950px){ /*for normal mobile devices or "UNIVERSAL"*/
+	#ln1 {
+    	margin-left: 14.8px;
+	}
+	.myList{
+		flex-direction: column;
+		margin-left: unset;
+	}
+	#myNav {
+	    flex-direction: column;
+	    justify-content: center;
+	}
+	.leftNav{
+		width: unset;
+	}
+	.rightNav{
+		width: unset;
+		flex-direction: column;
+    	align-items: center;
+    	right: unset;
+    	
+	}
+	.myList img{
+		width: 13%;
+		margin-bottom: 8px;
+
+	}
+	.lnModLi{
+		display: none;
+	}
+	.rnMod{
+	    display: none;
+	}
+
+	#searchButton{
+		margin-left: unset;
+		margin-top: 9px;
+		border: 2px solid;
+	}
+	.rightNav input{
+		height: 27px;
+		border: 2px solid;
+
+	}
+	.burger{
+		display: flex;
+		transition: all 0.3s;
+	}
+
+	.myList li{
+		
+	}
+	.imgMod{
+    	margin: 11px 311px 5px 15px;
+	}
+	.cards{
+		flex-direction: column;
+	}
+	.cardsTopBig{
+		margin: 0px 8vh;
+	}
+	.whatRV{
+		margin: 63px 38px 63px;
+	}
+	.cardsSmallDiv{
+		margin: 0px 47px;
+		margin-top: 30px;
+	}
+	.forGoButton{
+		margin-bottom: 17px;
+	}
+	#contactMe{
+	    margin: 40px 3vh;
+	}
+	#contactMe p{
+		margin: 9px 4vh 13px;
+	}
+	.cardsTop{
+		margin-top: 20vh;
+	}
+	.smallText{
+		font-size: 18px;
+	}
+	#about{
+		margin-top: 20vh;
+	}
+	#contactForm{
+		margin-top: 30vh;
+	}
+
+	.stMod{
+		font-size: 21px;
+	}
+	.introParaSmall{
+		font-size: 22px;
+	}
+	.introParaBig{
+		font-size: 34px;
+
+	}
+
+	.subBorder{
+		visibility: hidden;
+	}
+	.subName{
+		visibility: hidden;
+	}
+	.subNameBorder{
+		visibility: hidden;
+	}
+	.classButtons{
+	    margin: 9px 8px;
+	}
+	.subjectHead{
+		margin: 14% 8% 15%;
+	}
+	.sHead {
+	    font-size: 19px;
+	    margin: 4px 18px 6px;
+	}
+
+	.bHead{
+		font-size: 24px;
+    	margin: 17px 0px 4px;
+	}
+	.nonListHeading{
+		margin: 0px;
+	}
+	.mainTable tr td ul{
+		padding-left: 30px;
+	}
+	.monthsNameHeading{
+		margin: 0px;
+	}
+	.monthsName{
+		font-size: 18px;
+		width: unset;
+	}
+	.monthsNameHeading, .nonListHeading{
+		font-size: 25px;
+		border: none;
+		text-decoration: underline;
+	}
+}
+
+
+@media only screen and (max-width: 823px), @media only screen and (max-width: 812px){
+	.myList img{
+	    width: 6%;
+	}
+	.imgMod{
+		margin: 11px 718px 5px 15px;
+	}
+	.burgerMod {
+    	margin: -52px 0px 22px 706px;
+	}
+	.cardsTopBig {
+    	margin: 0px 43vh;
+	}
+	.aboutPara {
+    	margin: 0px 62vh;
+	}
+	.cards{
+	    margin: 5% 26%;
+	}
+	#contactMe {
+    	margin: 40px 40vh;
+	}
+}
+
+
+@media only screen and (max-width: 823px){
+	.cardsSmallDiv img {
+    	height: 80px;
+	}
+	.cards {
+    	margin: 5% 25%;
+	}
+	.bigText{
+		font-size: 40px;
+	}
+	.smallText{
+		font-size: 25px;
+	}
+	#contactMe {
+        margin: 40px 25vh;
+	}
+	.whatRVS{
+		font-size: 23px;
+	}
+	.whatRVB{
+		font-size: 36px;
+	}
+	.chapterNames{
+		width: 70%;
+	}
+	.subjectHead {
+    	margin: 9% 8% 6%;
+	}
+	.burgerMod {
+    	margin: -55px 0px 22px 712px;
+	}
+	.headMain{
+		margin: 4% 30% 0;
+	}
+	#search{
+		width: 189px;
+	}
+	.v-l-boxes-main{
+		margin-top: 11%;
+	}
+	
+}
+
+@media only screen and (max-width: 812px){
+	.chapterNames{
+		width: 70%;
+	}
+	.subjectHead {
+    	margin: 9% 8% 6%;
+	}
+	.burgerMod {
+    	margin: -55px 0px 22px 712px;
+	}
+	.v-l-boxes-main{
+		margin-top: 11%;
+	}
+	.s-btn-m{
+		padding: 3px 6px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.myList img{
+		width: 6.9%;
+	}
+	.imgMod{
+		margin: 11px 665px 5px 15px;
+	}
+	.burgerMod{
+		margin: -55px 0px 22px 612px;
+	}
+
+	.bigText{
+		font-size: 37px;
+	}
+	.smallText{
+		font-size: 26px;
+    	margin: 0px 24px;
+	}
+	.cards{
+		margin: 5% 20%;
+	}
+	.subGoButton{
+		font-size: 22px;
+	}
+	#contactSubmit{
+	    margin: 27px 23vh 18px;
+	}
+	#contactMe p{
+		margin: 9px 16vh 13px;
+	}
+	.cardsSmallDiv img{
+	    height: 106px;
+	}
+	.cardsTopBig{
+		margin: 0px 13vh;
+	}
+	.aboutPara{
+	    margin: 0px 19vh;
+	}
+	#contactMe {
+    	margin: 40px 8vh;
+	}
+	.whatRVS{
+		font-size: 22px;
+		margin:unset;
+	}
+	.whatRVB{
+		font-size: 34px;
+	}
+	.burgerMod {
+    	margin: -55px 0px 22px 672px;
+	}
+	.monthsName {
+    	width: 26%;
+	}
+}
+
+@media only screen and (max-width: 736px){
+	.imgMod {
+    	margin: 11px 634px 5px 15px;
+	}
+	.cards {
+    	margin: 5% 19%;
+	}
+	.cardsTopBig {
+    	margin: 0px 32vh;
+	}
+	.smallText{
+		margin: unset;
+	}
+	#contactMe {
+    	margin: 40px 24vh;
+	}	
+	.aboutPara {
+    	margin: 0px 44vh;
+	}
+	.whatRVB {
+    	font-size: 32px;
+	}
+	.chapterNames{
+		width: 100%;
+	}
+	.subjectHead {
+    	margin: 9% 8% 6%;
+	}
+	.burgerMod {
+    	margin: -55px 0px 22px 632px;
+	}
+}
+@media only screen and (max-width: 731px){
+	
+}
+@media only screen and (max-width: 667px){
+	.imgMod {
+    	margin: 11px 584px 5px 15px;
+	}
+	.burgerMod {
+    	margin: -55px 0px 22px 562px;
+	}
+	.introParaBig {
+    	font-size: 30px;
+	}
+	.cardsTopBig {
+    	margin: 0px 25vh;
+	}
+	.cardsTopBig {
+    	margin: 0px 40vh;
+	}
+	.bigText {
+    	font-size: 34px;
+	}	
+	.smallText{
+		font-size: 23px;
+	}
+	#contactMe {
+    	margin: 40px 18vh;
+	}
+	.introParaSmall {
+    	font-size: 19px;
+	}
+	.rightNav{
+	    margin: 7px 0px;
+	}
+	.myList li a{
+		font-size: 14px;
+	}
+	.cardsTopBig {
+    	margin: 0px 25vh;
+	}	
+	.aboutPara {
+    	margin: 0px 41vh;
+	}
+	.whatRVS {
+    	font-size: 21px;
+	}
+	.whatRVB {
+    	font-size: 30px;
+	}
+	.monthsName {
+    	width: 32%;
+	}
+	.chapterNames{
+		font-size: 15px;
+	}
+	.headMain {
+    	margin: 4% 25% 0;
+	}
+	.v-l-boxes-main {
+    	margin-top: 13%;
+	}
+}
+
+
+@media only screen and (max-width: 640px){
+	.imgMod {
+    	margin: 11px 564px 5px 15px;
+	}
+	.myList img {
+    	width: 7.6%;
+	}
+	.myList li a {
+    	font-size: 16px;
+	}
+	.cardsTopBig {
+    	margin: 0px 23vh;
+	}
+	.aboutPara{
+		margin: 0px 37vh;
+	}
+	.whatRVS {
+    	font-size: 21px;
+	}
+	.whatRVB {
+    	font-size: 32px;
+	}
+}
+
+
+@media only screen and (max-width: 568px){
+	.imgMod {
+    	margin: 11px 474px 5px 15px;
+	}
+	.burgerMod {
+    	margin: -55px 0px 22px 469px;
+	}
+	.introParaBig {
+    	font-size: 28px;
+	}
+	.cardsSmallDiv img {
+    	height: 80px;
+	}
+	.aboutPara{
+	    margin: 0px 36vh;
+	}
+	.myList img {
+    	width: 8%;
+	}
+	.whatRVS {
+    	font-size: 19px;
+	}
+	.whatRVB {
+    	font-size: 28px;
+	}
+	.myList li a {
+    	font-size: 14px;
+	}
+	.headMain {
+    	margin: 4% 24% 0;
+	}
+	.v-l-boxes-main {
+    	margin-top: 15%;
+	}
+}
+
+@media only screen and (max-width: 540px){
+	.burgerMod{
+		margin: -55px 0px 22px 448px;
+	}
+	.myList img{
+		width: 10%;
+	}
+	.imgMod{
+		margin: 11px 455px 5px 15px;
+	}
+	.introParaBig{
+		font-size: 25px;
+	}
+	.bigText {
+    	font-size: 34px;
+	}
+	.smallText {
+    	font-size: 22px;
+    	margin: 7px 27px 0px;
+	}
+	.subGoButton {
+    	font-size: 20px;
+	}	
+	.cardsTopBig{
+		margin: 0px 13vh;
+	}
+	.bigText{
+		font-size: 32px;
+	}
+	.smallText {
+    	font-size: 20px;
+    	margin: 15px 0px 0px;
+	}
+	.cards{
+		margin: 5% 15%;
+	}
+	.cardsSmallDiv img{
+	    height: 73px;
+	}
+	.headMain{
+		margin: 13% 20%;
+	}
+	.providerName{
+		font-size: 21px;
+	}
+	.v-l-boxes{
+    	height: 291px;
+	}
+	.s-head{
+	    margin-bottom: 8px;
+	}
+	.s-btn-m{
+	    width: 8%;
+	}
+	.videoList{
+		height: 177px;
+		width: 245px;
+	}
+	.v-l-boxes-main{
+		margin-top: 14%;
+	}
+	#contactMe {
+    	margin: 40px 8vh;
+	}
+}
+
+@media only screen and (max-width: 450px){
+	.cards{
+		margin: unset;
+	}
+	.bigText{
+		font-size: 24px;
+	}
+	.stMod {
+	    font-size: 21px;
+	}
+	.subGoButton{
+		font-size: 16px;
+	}
+	#contactMe p{
+		margin: 9px 4vh 13px;
+	}
+	#contactSubmit{
+		margin: 27px 12vh 18px;
+	}
+	.whatRVB{
+		font-size: 30px;
+	}
+	.smallText{
+		font-size: 20px;
+	}
+	.whatRV{
+		padding: 5%;
+	}
+	.burgerMod{
+		margin: -52px 0px 22px 298px;
+	}
+	.myList img{
+		width: 13%;
+	}
+	.imgMod{
+    	margin: 11px 311px 5px 15px;
+	}
+	.monthsName {
+	    font-size: 17px;
+	    width: 30%;
+	}
+	.subjectHead{
+		margin: 5em 8% 12%;
+	}
+	.chapterNames{
+	    font-size: 13.6px;
+	}
+}
+
+@media only screen and (max-width: 425px){
+	.cards{
+	    margin: 0px 15px;
+	}
+}
+@media only screen and (max-width: 414px){
+	.cards {
+	    margin: 34px 30px 0px;
+	}
+	.smallText{
+		font-size: 19px;
+		margin: unset;
+	}
+	.introParaSmall{
+		font-size: 16px;
+	}
+	.introParaBig{
+		font-size: 27px
+	}
+	.headMain{
+		margin: 18% 11%;
+	}
+	.providerName{
+		font-size: 16px;
+	}
+	.v-l-boxes{
+		height: 270px;
+	}
+	.s-head{
+	    margin-bottom: 8px;
+	}
+	.s-btn-m{
+	    width: 8%;
+	}
+	.videoList{
+		height: 177px;
+		width: 245px;
+	}
+	.v-l-boxes-main{
+		margin-top: 14%;
+	}
+	.cardsTopBig {
+    	margin: 0px 7vh;
+	}
+	#contactMe {
+    	margin: 40px 4vh;
+	}
+	.myList img {
+    	width: 11.7%;
+	}
+}
+
+@media only screen and (max-width: 375px){
+	.cards{
+		margin: 34px 17px 0px;
+	}
+	.whatRVB{
+		font-size: 27px;
+	}
+	.smallText{
+		font-size: 18px;
+	}
+	.headMain{
+		margin: 18% 11%;
+	}
+	.providerName{
+		font-size: 16px;
+	}
+	.v-l-boxes{
+		height: 270px;
+	}
+	.s-head{
+	    margin-bottom: 8px;
+	}
+	.s-btn-m{
+	    width: 8%;
+	}
+	.videoList{
+		height: 177px;
+		width: 245px;
+	}
+	.v-l-boxes-main{
+		margin-top: 14%;
+	}
+	.myList img {
+    	width: 12.5%;
+	}
+	.imgMod {
+    	margin: 11px 301px 5px 15px;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	.burgerMod{
+    	margin: -52px 55px 22px 298px;
+    	padding: 2px 3px;
+	}
+	.imgMod{
+		margin: 11px 259px 5px 15px;
+	}
+	.cards{
+		margin: 34px 0px 0px;
+	}
+	.cardsTopBig{
+		font-size: 28px;
+	}
+	.myList img{
+		width: 14.2%;
+	}
+	.chapterNames{
+		font-size: 13px;
+	}
+	.monthsName{
+		font-size: 15px;
+	}
+	.bHead{
+	    font-size: 23px;
+	}
+	#search{
+		width: 164px;
+	}
+	.s-head{
+	    font-size: 37px;
+	}
+	.providerName {
+    	font-size: 13px;
+	}
+}
+@media only screen and (max-width: 280px){
+	.burgerMod{
+    	margin: -52px 55px 22px 270px;
+	}
+	.imgMod{
+		margin: 11px 217px 5px 15px;
+	}
+	.myList img{
+	    width: 16.8%;
+	}
+	.cardsTopBig {
+    	font-size: 23px;
+	}
+	.cardsSmallDiv{
+	    margin: 0px 33px;
+	}
+	.smallText{
+		font-size: 13px;
+	}
+	.whatRV{
+		margin: 63px 30px 63px;
+	}
+	#contactMe p{
+		margin: 9px 1vh 13px;
+		width: 199px;
+	}
+	#contactMe input{
+	}
+	.dInput{
+	}
+	#contactMe {
+    	margin: 40px 2vh;
+	}
+	#contactSubmit{
+		margin: 27px 10vh 18px;
+	}
+	.introParaSmall{
+		font-size: 15px;
+	}
+	.introParaBig {
+    	font-size: 25px;
+	}
+	.forButton{
+		margin-bottom: 35px;
+	}
+	.sHead{
+		font-size: 18px;
+	}
+	.bHead{
+		font-size: 20px;
+	}
+	.monthsNameHeading, .nonListHeading{
+	    font-size: 21px;
+	}
+	.chapterNames{
+		font-size: 10px;
+	}
+	.monthsName{
+		font-size: 13px;
+	}
+
+	.headMain {
+    	margin: 18% 4%;
+	}
+	.providerName {
+    	font-size: 11.5px;
+        margin: 2% 3% 3% 3%;
+	}
+	.v-l-boxes-main {
+    	margin-top: 17%;
+	}
+	#search{
+		width: 163px;
+	}
+	.myList img {
+    	width: 15.2%;
+	}
+	.whatRVB {
+    	font-size: 22px;
+	}	
+}

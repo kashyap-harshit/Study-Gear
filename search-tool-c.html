@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="refresh" charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>StudyGear - Topics Searcher</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/resp.css">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+	<header >
+		<nav id="myNav">
+			<div class="leftNav lnMod">
+				<ul class="myList">
+					<img src="img/logo.png" class="imgMod imgModOrg" style="margin-bottom: 6px;">
+					<li class="lnModLi" id="ln1" ><a href="index.html">Home</a></li>
+					<li class="lnModLi"><a href="index.html#cardsTopBig" id="navClass11">Subjects</a></li>
+					<li class="lnModLi"><a href="index.html#about">About</a></li>
+					<li class="lnModLi"><a href="index.html#contactForm">Contact Me</a></li>
+				</ul>
+			</div>
+			<div class="rightNav rnMod rnVis" >
+				<input type="text" name="text" placeholder="Search Topics" id="hSearch">
+				<button type="submit" class="btn" id="searchButton" value="search">Search</button>
+			</div>
+			<div class="b-div">
+				<div class="burger burgerMod b-search" >
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="main-s">
+
+		<div class="headMain" id="headMain">
+			<h1 class="s-head">Topic Searcher</h1>
+			<form id="form-m">
+				<input type="text" id="search" placeholder="Search Topics">
+				<img src="img/s.png" type="submit" value="search" class="s-btn-m s-img">
+			</form>
+		</div>
+		<div class="c-change">
+			<button class="c-change-btn n-btn">
+				<p class="c-change-p">click here for NCERT</p>
+			</button>
+		</div>
+		<div class="help-t">
+			<p class="help-t-p">
+				The search might take a minute or two, please be patient.
+			</p>
+		</div>
+		<div id="allVideos">
+			<div class="v-l-boxes">
+				<p class="providerName">unacademy jee</p>
+				<div id="v-unacademy-jee" class="v-l-boxes-main vdo-boxes"></div>
+			</div>
+			<div class="v-l-boxes">
+				<p class="providerName">unacademy neet</p>
+				<div id="v-unacademy-neet" class="v-l-boxes-main vdo-boxes"></div>
+			</div>
+			<div class="v-l-boxes">
+				<p class="providerName">vedantu jee</p>
+				<div id="v-vedantu-jee" class="v-l-boxes-main vdo-boxes"></div>
+			</div>
+			<div class="v-l-boxes">
+				<p class="providerName">vedantu neet</p>
+				<div id="v-vedantu-neet" class="v-l-boxes-main vdo-boxes"></div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer-s">
+			CopyRight © 2021 www.StudyGear.com - All Rights Reserved
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="javascript/search.js"></script>
+	<script src="javascript/search-c.js"></script>
+	<script src="javascript/resp.js"></script>
+</body>
+
+
+</html>
