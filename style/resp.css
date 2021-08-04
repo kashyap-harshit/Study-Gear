@@ -213,6 +213,17 @@
 	}
 
 }
+@media only screen and (max-width: 1024px) and (max-height: 1366px){
+	.cardsTopBig {
+    	margin: 0px 19vh;
+	}
+	.aboutPara {
+    	margin: 0px 24vh;
+	}
+	#contactMe {
+    	margin: 0 12vh;
+	}
+}
 
 @media only screen and (max-width: 1024px){
 	.cards{
@@ -236,17 +247,6 @@
 
 }
 
-@media only screen and (max-width: 1024px) and (max-height: 1366px){
-	.cardsTopBig {
-    	margin: 0px 19vh;
-	}
-	.aboutPara {
-    	margin: 0px 24vh;
-	}
-	#contactMe {
-    	margin: 0 12vh;
-	}
-}
 
 
 @media only screen and (max-width: 1000px){
@@ -819,7 +819,7 @@
 	    width: 30%;
 	}
 	.subjectHead{
-		margin: 5em 8% 12%;
+		margin: 2em 8% 7%;
 	}
 	.chapterNames{
 	    font-size: 12px;
@@ -951,14 +951,20 @@
 	.classButtons {
     	padding: 1.5px 18px;
 	}
+	.imgMod {
+    	margin: 11px 290px 5px 15px;
+	}
+	.burgerMod {
+    	margin: -52px 0px 22px 278px;
+	}
 }
 @media only screen and (max-width: 320px){
 	.burgerMod{
-    	margin: -52px 55px 22px 298px;
+    	margin: -52px 55px 22px 280px;
     	padding: 2px 3px;
 	}
 	.imgMod{
-		margin: 11px 259px 5px 15px;
+		margin: 11px 229px 5px 15px;
 	}
 	.cards{
 		margin: 34px 0px 0px;
@@ -996,6 +1002,16 @@
 	.introParaBig{
 		font-size: 29px;
 	}
+	.subjectHead {
+    	margin: 2em 8% 8%;
+	}
+	.sHead{
+		font-size: 15px;
+	}
+	.bHead {
+    	font-size: 22px;
+	}
+
 }
 @media only screen and (max-width: 280px){
 	.burgerMod{
@@ -1084,4 +1100,7 @@
 	.subjectHead {
     	margin: 3em 8% 12%;
 	}
+}
+@media only screen and (max-width: 240px){
+
 }
