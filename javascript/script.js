@@ -18,12 +18,16 @@ let navClass12int = 0;
 let bodyClass11 = document.getElementById("bodyClass11");
 let bodyClass12 = document.getElementById("bodyClass12");
 
-
-function subNameChange(GBindex, subNameString){ // subject name changer, but now since that feature is disabled it works like a backend
-	goButtons[GBindex].addEventListener("click", ()=>{
-		subName.innerHTML = subNameString;
-	})
+try {
+	function subNameChange(GBindex, subNameString){ // subject name changer, but now since that feature is disabled it works like a backend
+		goButtons[GBindex].addEventListener("click", ()=>{
+			subName.innerHTML = subNameString;
+		})
+	}
+} catch(e) {
+	true
 }
+
 
 function subForNav(navClass, gbin, gbinSub){
 	navClass.addEventListener("click", ()=>{
@@ -34,88 +38,116 @@ function subForNav(navClass, gbin, gbinSub){
 	})
 }
 
+
 document.addEventListener("DOMContentLoaded", ()=>{
 	if (sDuo.matches) {     
 	    helpTextPhone();
 	}
 	else{
-		tHelp.style.right = '-1.5%';
-		setTimeout(()=>{
-		    tHelp.style.opacity = '0%';
-		    setTimeout(()=>{
-		        tHelp.style.right = '-200%';
-		        setTimeout(()=>{
-		            tHelp.style.opacity = '100%';
-		        }, 1000);
-		    }, 1000);
-		}, 20000)		
+		try {
+			tHelp.style.right = '-1.5%';
+			setTimeout(()=>{
+			    tHelp.style.opacity = '0%';
+			    setTimeout(()=>{
+			        tHelp.style.right = '-200%';
+			        setTimeout(()=>{
+			            tHelp.style.opacity = '100%';
+			        }, 1000);
+			    }, 1000);
+			}, 20000)
+		} catch(e) {
+			true
+		}
+				
 	}
-
 });
 
 
 
-goButtons.forEach((e)=>{
-	e.addEventListener("click", ()=>{
-		document.location.href = "#introText";
+try {
+	goButtons.forEach((e)=>{
+		e.addEventListener("click", ()=>{
+			document.location.href = "#introText";
+		})
 	})
-})
+} catch(e) {
+	true
+}
 
 
 
-subNameChange(0, "Physics");
-subNameChange(1, "Chemistry");
-subNameChange(2, "Maths");
-subNameChange(3, "Biology");
+try {
+	subNameChange(0, "Physics");
+	subNameChange(1, "Chemistry");
+	subNameChange(2, "Maths");
+	subNameChange(3, "Biology");
+} catch(e) {
+	true
+}
 
-bodyClass11.addEventListener("click", ()=>{
-	if(subName.innerHTML == "Physics"){
-		window.location.href = "./subjectPages/class11phy.html";
-	}
-	else if(subName.innerHTML == "Chemistry"){
-		window.location.href = "./subjectPages/class11chem.html";
-	}
-	else if(subName.innerHTML =="Maths"){
-		window.location.href = "./subjectPages/class11maths.html";
-	}
-	else if(subName.innerHTML == "Biology"){
-		window.location.href = "./subjectPages/class11bio.html";
-	}
-	else{
-		true;
-	}
 
-})
+try {
+	bodyClass11.addEventListener("click", ()=>{
+		if(subName.innerHTML == "Physics"){
+			window.location.href = "./subjectPages/class11phy.html";
+		}
+		else if(subName.innerHTML == "Chemistry"){
+			window.location.href = "./subjectPages/class11chem.html";
+		}
+		else if(subName.innerHTML =="Maths"){
+			window.location.href = "./subjectPages/class11maths.html";
+		}
+		else if(subName.innerHTML == "Biology"){
+			window.location.href = "./subjectPages/class11bio.html";
+		}
+		else{
+			true;
+		}
 
-bodyClass12.addEventListener("click", ()=>{
-	if(subName.innerHTML == "Physics"){
-		window.location.href = "./subjectPages/class12phy.html";
-	}
-	else if(subName.innerHTML == "Chemistry"){
-		window.location.href = "./subjectPages/class12chem.html";
-	}
-	else if(subName.innerHTML =="Maths"){
-		window.location.href = "./subjectPages/class12maths.html";
-	}
-	else if(subName.innerHTML == "Biology"){
-		window.location.href = "./subjectPages/class12bio.html";
-	}
-	else{
-		true;
-	}
+	})
+} catch(e) {
+	true
+}
 
-})
+try {
+	bodyClass12.addEventListener("click", ()=>{
+		if(subName.innerHTML == "Physics"){
+			window.location.href = "./subjectPages/class12phy.html";
+		}
+		else if(subName.innerHTML == "Chemistry"){
+			window.location.href = "./subjectPages/class12chem.html";
+		}
+		else if(subName.innerHTML =="Maths"){
+			window.location.href = "./subjectPages/class12maths.html";
+		}
+		else if(subName.innerHTML == "Biology"){
+			window.location.href = "./subjectPages/class12bio.html";
+		}
+		else{
+			true;
+		}
 
-// selecting class and subject from body
-subForNav(bodyClass11, 0, "./subjectPages/class11phy.html");
-subForNav(bodyClass11, 1, "./subjectPages/class11chem.html");
-subForNav(bodyClass11, 2, "./subjectPages/class11maths.html");
-subForNav(bodyClass11, 3, "./subjectPages/class11bio.html");
+	})
+} catch(e) {
+	true
+}
 
-subForNav(bodyClass12, 0, "./subjectPages/class12phy.html");
-subForNav(bodyClass12, 1, "./subjectPages/class12chem.html");
-subForNav(bodyClass12, 2, "./subjectPages/class12maths.html");
-subForNav(bodyClass12, 3, "./subjectPages/class12bio.html");
+
+try {
+	// selecting class and subject from body
+	subForNav(bodyClass11, 0, "./subjectPages/class11phy.html");
+	subForNav(bodyClass11, 1, "./subjectPages/class11chem.html");
+	subForNav(bodyClass11, 2, "./subjectPages/class11maths.html");
+	subForNav(bodyClass11, 3, "./subjectPages/class11bio.html");
+
+	subForNav(bodyClass12, 0, "./subjectPages/class12phy.html");
+	subForNav(bodyClass12, 1, "./subjectPages/class12chem.html");
+	subForNav(bodyClass12, 2, "./subjectPages/class12maths.html");
+	subForNav(bodyClass12, 3, "./subjectPages/class12bio.html");
+} catch(e) {
+	true
+}
+
 
 
 

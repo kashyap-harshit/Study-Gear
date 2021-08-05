@@ -12,8 +12,7 @@ let edu = " intitle: EduMantra 11th & 12th SCIENCE";
 var video = "";
 var mSearch;
 var main_ms;
-// let api_key = "AIzaSyBOw2lflsU6QypVGP41ly2ot0BtwqOHkmg";
-let api_key = "AIzaSyBpAB077_wvU-dO3waPgrOQor2Av9JFQ-Q"; //harshit
+let api_key = "AIzaSyBpAB077_wvU-dO3waPgrOQor2Av9JFQ-Q";
 var uy_iframe = document.querySelector(".uy_iframe");
 let hVids = 0;
 let tHelp = document.querySelector(".help-t");
