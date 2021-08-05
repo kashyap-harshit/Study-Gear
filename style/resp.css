@@ -256,6 +256,7 @@
 }
 
 @media only screen and (max-width: 950px){ /*for normal mobile devices or "UNIVERSAL"*/
+	
 	#ln1 {
     	margin-left: 14.8px;
 	}
@@ -399,6 +400,12 @@
 		border: none;
 		text-decoration: underline;
 	}
+	.c-change{
+		margin: 40px 0px;
+	}
+	#allVideos {
+    	margin-top: -20px;
+	}
 }
 
 
@@ -449,8 +456,8 @@
 	.whatRVB{
 		font-size: 36px;
 	}
-	.chapterNames{
-		width: 70%;
+	.chapterNames {
+    	width: 1000vh;
 	}
 	.subjectHead {
     	margin: 9% 8% 6%;
@@ -471,9 +478,7 @@
 }
 
 @media only screen and (max-width: 812px){
-	.chapterNames{
-		width: 70%;
-	}
+		
 	.subjectHead {
     	margin: 9% 8% 6%;
 	}
@@ -553,7 +558,11 @@
 		width: 30vh;
 	}
 }
-
+@media only screen and (max-width: 760px){
+	.cardsSmallDiv {
+    	width: 70vh;
+	}
+}
 @media only screen and (max-width: 736px){
 	.imgMod {
     	margin: 11px 634px 5px 15px;
@@ -576,9 +585,7 @@
 	.whatRVB {
     	font-size: 32px;
 	}
-	.chapterNames{
-		width: 100%;
-	}
+
 	.subjectHead {
     	margin: 9% 8% 6%;
 	}
@@ -586,8 +593,16 @@
     	margin: -55px 0px 22px 632px;
 	}
 }
-@media only screen and (max-width: 731px){
-	
+
+
+@media only screen and (max-width: 684px){
+	.imgMod {
+    	margin: 11px 584px 5px 15px;
+	}
+	.burgerMod {
+    	margin: -55px 0px 22px 582px;
+	}
+
 }
 @media only screen and (max-width: 667px){
 	.imgMod {
@@ -775,8 +790,24 @@
 	#contactMe {
     	margin: 40px 40px;
 	}
+	#allVideos {
+    	margin-top: 0px;
+	}
+	.headMain {
+    	margin: 13% 20% 9%;
+	}
+	.cardsSmallDiv {
+    	width: 35vh;
+	}
 }
-
+@media only screen and (max-width: 502px){
+	.imgMod {
+    	margin: 11px 395px 5px 15px;
+	}
+	.burgerMod {
+    	margin: -55px 0px 22px 398px;
+	}
+}
 @media only screen and (max-width: 450px){
 	.cards{
 		margin: unset;
@@ -824,6 +855,15 @@
 	.chapterNames{
 	    font-size: 12px;
 	}
+	.cardsSmallDiv {
+    	width: 30vh;
+	}
+	.rightNav input{
+		height: 32px;
+	}
+	#searchButton{
+	    height: 32px;
+	}
 }
 
 @media only screen and (max-width: 425px){
@@ -857,7 +897,7 @@
 		
 	}
 	.headMain{
-		margin: 18% 11%;
+		margin: 18% 11% 0;
 	}
 	.providerName{
 		font-size: 16px;
@@ -903,7 +943,7 @@
 		font-size: 18px;
 	}
 	.headMain{
-		margin: 18% 11%;
+		margin: 18% 11% 0;
 	}
 	.providerName{
 		font-size: 16px;
@@ -1079,7 +1119,7 @@
 	}
 
 	.headMain {
-    	margin: 18% 4%;
+    	margin: 18% 4% 0;
 	}
 	.providerName {
     	font-size: 11.5px;

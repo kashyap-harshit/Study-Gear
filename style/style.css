@@ -85,7 +85,7 @@ main{
 .myList img{
 	width: 6.6%;
     border: 2px solid #006595;
-    padding: 3px 5.3px;
+    padding: 5px;
     border-radius: 62%;
     transition: all 0.3s;
     background-color: white;
@@ -1029,7 +1029,7 @@ footer{
     z-index: 20;
     position: fixed;
     bottom: 10%;
-    right: -200%;
+    right: -500%;
     background: #47c4ff;
     border-radius: 22px;
     box-shadow: 0.6px 1.6px 4px #005e8b;
