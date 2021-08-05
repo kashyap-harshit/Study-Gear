@@ -406,6 +406,9 @@
 	#allVideos {
     	margin-top: -20px;
 	}
+	.myList img{
+		padding: 5px;
+	}
 }
 
 

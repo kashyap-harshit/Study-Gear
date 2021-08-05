@@ -177,7 +177,7 @@ try{
 }
 
 catch(e){
-    console.log(e)
+    true
 }
 
 
@@ -208,7 +208,7 @@ try{
 }
 
 catch(e){
-   console.log(e)
+   true
 }
 
 
@@ -222,7 +222,7 @@ try{
 }
 
 catch(e){
-    console.log(e)
+    true
 }
 
 try{
@@ -243,7 +243,7 @@ try{
 
 }
 catch(e){
-    console.log(e)
+    true
 }
 
 try {
@@ -264,7 +264,7 @@ try {
         true
     }
 } catch(e) {
-    console.log(e)
+    true
 }
 
 
@@ -279,7 +279,7 @@ try {
         window.location.assign("search-tool-c.html");
     })
 } catch(e) {
-    console.log(e)
+    true
 }
 
 
@@ -303,7 +303,7 @@ try {
 } 
 
 catch(e) {
-    console.log(e)
+    true
 }
 
 
@@ -316,7 +316,7 @@ try {
         window.location.assign("search-tool.html");
     })
 } catch(e) {
-    console.log(e)
+    true
 }
 
 
@@ -337,7 +337,7 @@ try {
         true
     }
 } catch(e) {
-    console.log(e)
+    true
 
 }
 
@@ -358,7 +358,7 @@ try{
 }
 
 catch(e){
-    console.log("Third Code's : " + e);
+    true
     
 }
 
