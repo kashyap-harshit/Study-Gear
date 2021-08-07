@@ -8,3 +8,6 @@ Firstly, I am also studying in 11th standard. When I wanted to start my 11th cla
 
 ## How to use this site?
 Select the class first, then the subject or vice versa. After that you will be redirected to the page of Monthly Syllabus. You click on the chapter you need. After that you will be redirected to the search tool's page, where you will get videos from the top education providers. You can directly search topics from the Home page as well.
+
+## Bugs
+If you find any please report.
