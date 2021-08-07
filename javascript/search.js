@@ -72,7 +72,7 @@ function vdo_not_found(vdo_sec_index){
 
 function videoSearch(key, search, pDiv, cId, cTag){
     $(pDiv).empty()
-    $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=1&channelId=" + cId + "&q=" + search, function(data){
+    $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=7&channelId=" + cId + "&q=" + search, function(data){
         data.items.forEach(item => {
             video = `<iframe class="videoList" width="320" height="240" src="https://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allowfullscreen></iframe>`
             $(pDiv).append(video); 
