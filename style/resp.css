@@ -40,11 +40,11 @@
 		min-width: 220px;
 	}
 	.rightNav{
-		margin: 36px 0px;
+		margin: 24px 0px;
 		right: 0%;
 	}
 	.myList img{
-		width: 6.2%;
+	    width: 68px;
 	}
 	.chapterNames{
 		width: 132vh;
@@ -67,6 +67,7 @@
 	#form-m{
 		height: 50px;
 	}
+
 }
 
 @media only screen and (max-width: 1600px){
@@ -279,7 +280,7 @@
     	
 	}
 	.myList img{
-		width: 13%;
+		width: 50px;
 		margin-bottom: 8px;
 
 	}
@@ -309,7 +310,10 @@
 		
 	}
 	.imgMod{
-    	margin: 11px 311px 5px 15px;
+    	margin: 11px 820px 5px 15px;
+	}
+	.burgerMod {
+    	margin: -52px 0px 22px 790px;
 	}
 	.cards{
 		flex-direction: column;
@@ -560,10 +564,24 @@
 	.cardsSmallDiv{
 		width: 30vh;
 	}
+	.no-vid{
+		margin: 150px 150px;
+	}
+}
+@media only screen and (max-width: 768px) and (max-height: 360px){
+	.cardsSmallDiv {
+    	width: 70vh;
+	}
 }
 @media only screen and (max-width: 760px){
 	.cardsSmallDiv {
     	width: 70vh;
+	}
+	.blurBGPhy, .blurBGChem, .blurBGBio, .blurBGMaths{
+		background: #e1f3ff;
+	}
+	.tbody-phy, .tbody-chem, .tbody-bio, .tbody-maths{
+		background: #e1f3ff;
 	}
 }
 @media only screen and (max-width: 736px){
@@ -803,13 +821,32 @@
     	width: 35vh;
 	}
 }
-@media only screen and (max-width: 502px){
-	.imgMod {
-    	margin: 11px 395px 5px 15px;
-	}
+@media only screen and (max-width: 504px){
 	.burgerMod {
-    	margin: -55px 0px 22px 398px;
+        margin: -55px 0px 22px 408px;
 	}
+	.imgMod {
+    	margin: 11px 415px 5px 15px;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	.burgerMod {
+    	margin: -55px 0px 22px 380px;
+	}
+	.cardsSmallDiv {
+    	width: 30vh;
+	}	
+	.cardsTopBig {
+    	margin: 0px 4vh;
+	}
+	.aboutPara{
+		margin: 0px 8vh;
+	}
+	.no-vid{
+		margin: 150px 20px
+	}
+
 }
 @media only screen and (max-width: 450px){
 	.cards{
@@ -933,6 +970,11 @@
 	.bHead {
     	font-size: 28px;
 	}
+	.no-vid{
+		margin: 150px 40px;
+		font-size: 30px;
+	}
+
 }
 
 @media only screen and (max-width: 375px){
@@ -1000,6 +1042,9 @@
 	.burgerMod {
     	margin: -52px 0px 22px 278px;
 	}
+	.no-vid{
+		margin: 150px 30px;
+	}
 }
 @media only screen and (max-width: 320px){
 	.burgerMod{
@@ -1053,6 +1098,10 @@
 	}
 	.bHead {
     	font-size: 22px;
+	}
+	.no-vid{
+		font-size: 20px;
+		margin: 120px 50px;
 	}
 
 }
@@ -1142,6 +1191,9 @@
 	}	
 	.subjectHead {
     	margin: 3em 8% 12%;
+	}
+	.no-vid{
+		margin: 120px 30px;
 	}
 }
 @media only screen and (max-width: 240px){

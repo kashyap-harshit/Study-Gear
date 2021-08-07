@@ -150,7 +150,7 @@ try{
     function chapterNameTaker(chapNameIndex){
         chapterName[chapNameIndex].addEventListener("click", ()=>{
             mSearch = chapterName[chapNameIndex].textContent;
-            localStorage.setItem("mSearch", mSearch);
+            sessionStorage.setItem("mSearch", mSearch);
 
             window.location.assign("../search-tool.html");
         })
@@ -181,20 +181,20 @@ catch(e){
 
 
 try{
-    mSearch = localStorage.getItem("mSearch");
+    mSearch = sessionStorage.getItem("mSearch");
     ms = mSearch.replace('\n\t\t\t  \t\t\t\t', '');
     ms_2 = ms.replace('\n\t\t\t  \t\t\t', '');
     ms_2_trim = ms_2.trim()
-    localStorage.setItem("ms_2_trim", ms_2_trim);
-    main_ms = localStorage.getItem("ms_2_trim");
+    sessionStorage.setItem("ms_2_trim", ms_2_trim);
+    main_ms = sessionStorage.getItem("ms_2_trim");
 
     if (main_ms.length > 0 && main_ms != null && main_ms != "null") {
         search_input.value = main_ms;
         helpText();
         searchWithGap(main_ms);
-        localStorage.setItem("cSearch1", main_ms);
-        main_ms = localStorage.removeItem("ms_2_trim");
-        mSearch = localStorage.removeItem("mSearch");
+        sessionStorage.setItem("cSearch1", main_ms);
+        main_ms = sessionStorage.removeItem("ms_2_trim");
+        mSearch = sessionStorage.removeItem("mSearch");
     }
     if (main_ms == null && mSearch == null){
         true
@@ -213,7 +213,7 @@ catch(e){
 
 try{
     hSearch_btn.addEventListener("click", ()=>{
-        localStorage.setItem("hSearch", hSearch.value);
+        sessionStorage.setItem("hSearch", hSearch.value);
         window.location.assign("search-tool.html");
         
     })
@@ -225,13 +225,13 @@ catch(e){
 }
 
 try{
-    hSearch_val = localStorage.getItem("hSearch");
+    hSearch_val = sessionStorage.getItem("hSearch");
     
     if (hSearch_val.length > 0 && hSearch_val != null && hSearch_val !== "null") {
         search_input.value = hSearch_val;
         searchWithGap(hSearch_val);
-        localStorage.setItem("hSearch2", hSearch_val);
-        hSearch_val = localStorage.removeItem("hSearch");
+        sessionStorage.setItem("hSearch2", hSearch_val);
+        hSearch_val = sessionStorage.removeItem("hSearch");
     }
     if (hSearch_val == null || hSearch_val == "null") {
         true
@@ -246,14 +246,14 @@ catch(e){
 }
 
 try {
-    hSearch3_val = localStorage.getItem("hSearch3");
+    hSearch3_val = sessionStorage.getItem("hSearch3");
     
     if (hSearch3_val.length > 0 && hSearch3_val != null && hSearch3_val !== "null") {
         search_input.value = hSearch3_val;
         helpText();
         searchWithGapComp(hSearch3_val);
-        localStorage.setItem("hSearch", hSearch3_val);
-        hSearch3_val = localStorage.removeItem("hSearch3");
+        sessionStorage.setItem("hSearch", hSearch3_val);
+        hSearch3_val = sessionStorage.removeItem("hSearch3");
 
     }
     if (hSearch3_val == null || hSearch3_val == "null") {
@@ -268,13 +268,13 @@ try {
 
 
 try {
-    cSearch1_db = localStorage.getItem("cSearch1");
-    hSearch2_val = localStorage.getItem("hSearch2");
+    cSearch1_db = sessionStorage.getItem("cSearch1");
+    hSearch2_val = sessionStorage.getItem("hSearch2");
     cBtn.addEventListener("click", ()=>{
-        localStorage.setItem("cSearch2", cSearch1_db);
-        cSearch1_db = localStorage.removeItem("cSearch1");
-        localStorage.setItem("hSearch3", hSearch2_val);
-        hSearch2_val = localStorage.removeItem("hSearch2");
+        sessionStorage.setItem("cSearch2", cSearch1_db);
+        cSearch1_db = sessionStorage.removeItem("cSearch1");
+        sessionStorage.setItem("hSearch3", hSearch2_val);
+        hSearch2_val = sessionStorage.removeItem("hSearch2");
         window.location.assign("search-tool-c.html");
     })
 } catch(e) {
@@ -284,14 +284,14 @@ try {
 
 
 try {
-    cSearch2_db = localStorage.getItem("cSearch2");
+    cSearch2_db = sessionStorage.getItem("cSearch2");
     
     if (cSearch2_db.length > 0 && cSearch2_db != null && cSearch2_db != "null") {
         search_input.value = cSearch2_db;
         helpText();
         searchWithGapComp(cSearch2_db);
-        localStorage.setItem("cSearch3", cSearch2_db);
-        cSearch2_db = localStorage.removeItem("cSearch2");
+        sessionStorage.setItem("cSearch3", cSearch2_db);
+        cSearch2_db = sessionStorage.removeItem("cSearch2");
     }
     if (cSearch2_db == null || cSearch2_db == "null") {
         true
@@ -308,10 +308,10 @@ catch(e) {
 
 
 try {
-    cSearch3_db = localStorage.getItem("cSearch3");
+    cSearch3_db = sessionStorage.getItem("cSearch3");
     nBtn.addEventListener("click", ()=>{
-        localStorage.setItem("cSearch4", cSearch3_db);
-        cSearch3_db = localStorage.removeItem("cSearch3");
+        sessionStorage.setItem("cSearch4", cSearch3_db);
+        cSearch3_db = sessionStorage.removeItem("cSearch3");
         window.location.assign("search-tool.html");
     })
 } catch(e) {
@@ -320,14 +320,14 @@ try {
 
 
 try {
-    cSearch4_db = localStorage.getItem("cSearch4");
+    cSearch4_db = sessionStorage.getItem("cSearch4");
     
     if (cSearch4_db.length > 0 && cSearch4_db != null && cSearch4_db != "null") {
         search_input.value = cSearch4_db;
         helpText();
         searchWithGap(cSearch4_db);
-        localStorage.setItem("cSearch2", cSearch4_db);
-        cSearch4_db = localStorage.removeItem("cSearch4");
+        sessionStorage.setItem("cSearch2", cSearch4_db);
+        cSearch4_db = sessionStorage.removeItem("cSearch4");
     }
     if (cSearch4_db == null || cSearch4_db == "null") {
         true
