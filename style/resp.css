@@ -37,7 +37,7 @@
 		font-size: 32px;
 	}
 	.cardsSmallDiv{
-		min-width: 220px;
+		min-width: 280px;
 	}
 	.rightNav{
 		margin: 24px 0px;
@@ -47,7 +47,7 @@
 	    width: 68px;
 	}
 	.chapterNames{
-		width: 132vh;
+		width: 140vh;
 	}
 	.nonListHeading{
 		margin: 0px 456px;
@@ -67,7 +67,34 @@
 	#form-m{
 		height: 50px;
 	}
-
+	.myList li a{
+		font-size: 17px;
+	}
+	.rightNav input{
+		font-size: 17px;
+	}
+	#searchButton{
+		font-size: 17px;
+	}
+	.bigText{
+		font-size: 30px;
+	}
+	.cardsSmallDiv img{
+	    height: 110px;
+	}
+	.smallText{
+		font-size: 21px;
+	}
+	.subGoButton{
+		padding: 0 100px;
+		height: 42px;
+	}
+	#contactMe input, .dInput{
+		font-size: 17px;
+	}
+	#contactSubmit{
+		font-size: 18px;
+	}
 }
 
 @media only screen and (max-width: 1600px){
@@ -89,6 +116,28 @@
 	.nonListHeading {
     	margin: 0px 355px;
 	}
+	.smallText{
+		font-size: 17px;
+	}
+	.cardsSmallDiv img{
+	    height: 73px;
+	}
+	.bigText{
+		font-size: 24px;
+	}
+	.cardsSmallDiv{
+		min-width: 205px;
+	}
+	.subGoButton{
+		padding: 0 73px;
+	}
+	#contactMe input, .dInput{
+		font-size: 15px;
+	}
+	#contactSubmit{
+		font-size: 16px;
+	}
+
 }
 @media only screen and (max-width: 1440px){
 	.cardsTopBig {
@@ -145,6 +194,15 @@
 	}
 	.bigText{
 		font-size: 28px;
+	}
+	.myList li a{
+		font-size: 16px;
+	}
+	.rightNav input{
+		font-size: 16px;
+	}
+	#searchButton{
+		font-size: unset;
 	}
 }
 
