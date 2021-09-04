@@ -806,6 +806,10 @@
 }
 
 @media only screen and (max-width: 540px){
+	.p-ref-div{
+		flex-direction: column;
+		margin-bottom: -12px;
+	}
 	.burgerMod{
 		margin: -55px 0px 22px 448px;
 	}
@@ -889,6 +893,7 @@
 }
 
 @media only screen and (max-width: 480px){
+
 	.burgerMod {
     	margin: -55px 0px 22px 380px;
 	}
@@ -1164,6 +1169,9 @@
 
 }
 @media only screen and (max-width: 280px){
+	.p-ref{
+		font-size: 12px;
+	}
 	.burgerMod{
     	margin: -52px 55px 22px 270px;
 	}

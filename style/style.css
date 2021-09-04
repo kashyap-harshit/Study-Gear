@@ -851,6 +851,7 @@ footer{
     background: none;
     transition: 0.3s;
     width: 7%;
+    height: 24px;
 
 }
 
@@ -1094,4 +1095,38 @@ footer{
     background: #47c4ff;
     
     box-shadow: 2px 2px 11px #005e8b;
+}
+
+.p-ref{
+    border: 2px solid #006595;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 15px;
+    background: none;
+    margin: 0px 10px;
+    margin-bottom: 8px;
+    box-shadow: 1px 1px 3px #005e8b;
+    transition: 0.3s;
+}
+.p-ref:hover{
+    box-shadow: 1px 1px 9px #005e8b;
+    background: #dbf0ff;
+}
+.p-ref-div{
+    display: flex;
+    justify-content: center;
+    margin: 9px 0px;
+    margin-bottom: -20px;
+}
+
+.p-ref-yt{
+
+}
+.p-ref-g{
+
+}
+.p-href-a{
+    text-decoration: none;
+    color: black;
+    font-family: "roboto", sans-serif;
 }
