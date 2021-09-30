@@ -4,15 +4,15 @@ let search_input = document.getElementById("search");
 let hSearch = document.querySelector('#hSearch');
 let hSearch_btn = document.querySelector('#searchButton');
 let mForm = document.querySelector('.form-m');
-let pw = " intitle: PhysicsWallah";
-let uy = " intitle: Unacademy";
-let vd = " intitle: Vedantu";
-let pdh = " intitle: Padhle 11thies JEE & NEET";
-let edu = " intitle: EduMantra 11th & 12th SCIENCE";
+let pw = "intitle:PhysicsWallah";
+let uy = "intitle:Unacademy";
+let vd = "intitle:Vedantu";
+let pdh = "intitle:Padhle 11thies JEE & NEET";
+let edu = "intitle:EduMantra 11th & 12th SCIENCE";
 var video = "";
 var mSearch;
 var main_ms;
-let api_key = "AIzaSyBpAB077_wvU-dO3waPgrOQor2Av9JFQ-Q";
+let api_key = "AIzaSyBOw2lflsU6QypVGP41ly2ot0BtwqOHkmg"; //for testing
 var uy_iframe = document.querySelector(".uy_iframe");
 let hVids = 0;
 let tHelp = document.querySelector(".help-t");
@@ -26,6 +26,11 @@ let vdoBoxes = document.querySelectorAll(".vdo-boxes");
 let cBtn = document.querySelector(".c-btn");
 let nBtn = document.querySelector(".n-btn");
 
+
+
+function errorPass(){
+    true
+}
 
 function helpTextPhone(right_p){
     tHelp.style.bottom = '0%';
@@ -72,13 +77,36 @@ function vdo_not_found(vdo_sec_index){
 
 function videoSearch(key, search, pDiv, cId, cTag){
     $(pDiv).empty()
-    $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=7&channelId=" + cId + "&q=" + search, function(data){
+    $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=1&channelId=" + cId + "&q=" + search, function(data){
         data.items.forEach(item => {
-            video = `<iframe class="videoList" width="320" height="240" src="https://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allowfullscreen></iframe>`
-            $(pDiv).append(video); 
+            let vTitleText = item.snippet.title;
+            let cIdForLogo = item.snippet.channelId;
+            video = `
+                    <div class="v-div-1">
+                    <ul class="vTitle">
+                    <li>
+                    <a class="vTitle-a" href="https://www.youtube.com/watch?v=${item.id.videoId}" target="_blank">${vTitleText}</a>
+                    </li>
+                    </ul>
+                    </div>
+                    `
+            $(pDiv).append(video);
+            try {
+                let vTitle = document.querySelectorAll(".vTitle");
+                vTitle[9].style.marginBottom = '16px';
+                vTitle[19].style.marginBottom = '16px';
+                vTitle[29].style.marginBottom = '16px';
+                vTitle[39].style.marginBottom = '16px';
+                vTitle[49].style.marginBottom = '16px';
+            } catch(e) {
+                errorPass()
+            }
+            
+ 
         })
         moreVids = `<a class="moreRedirect" href="https://www.youtube.com/results?search_query=${search + cTag}" target="_blank">More Videos</a>`
         $(pDiv).append(moreVids);
+
         try {
             vdo_not_found(0);
             vdo_not_found(1);
@@ -86,7 +114,7 @@ function videoSearch(key, search, pDiv, cId, cTag){
             vdo_not_found(3);
             vdo_not_found(4);
         } catch(e) {
-            true
+            errorPass()
         }
         
         
@@ -95,7 +123,7 @@ function videoSearch(key, search, pDiv, cId, cTag){
 }
 
 
-function searchWithGap(perSearch){
+function searchWithGap(perSearch){ //NCERT
     timeForEach = 500;
     videoSearch(api_key, perSearch, "#v-physicsWallah", "UCiGyWN6DEbnj2alu7iapuKQ", pw);
             setTimeout(()=>{
@@ -127,6 +155,7 @@ function searchWithGapComp(perSearch){
 }
 
 
+
 try {
     sHead.addEventListener("click", ()=>{
         if (sDuo.matches) {
@@ -141,9 +170,7 @@ try {
         
     })
     
-} catch(e) {
-    true
-}
+} catch(e) {errorPass()}
 
 
 try{
@@ -175,9 +202,7 @@ try{
     
 }
 
-catch(e){
-    true
-}
+catch(e) {errorPass()}
 
 
 try{
@@ -207,7 +232,7 @@ try{
 }
 
 catch(e){
-   true
+   errorPass()
 }
 
 
@@ -220,9 +245,7 @@ try{
 
 }
 
-catch(e){
-    true
-}
+catch(e) {errorPass()}
 
 try{
     hSearch_val = sessionStorage.getItem("hSearch");
@@ -241,9 +264,7 @@ try{
     }
 
 }
-catch(e){
-    true
-}
+catch(e) {errorPass()}
 
 try {
     hSearch3_val = sessionStorage.getItem("hSearch3");
@@ -262,9 +283,7 @@ try {
     else {
         true
     }
-} catch(e) {
-    true
-}
+} catch(e) {errorPass()}
 
 
 try {
@@ -277,9 +296,7 @@ try {
         hSearch2_val = sessionStorage.removeItem("hSearch2");
         window.location.assign("search-tool-c.html");
     })
-} catch(e) {
-    true
-}
+} catch(e) {errorPass()}
 
 
 
@@ -301,9 +318,7 @@ try {
     }
 } 
 
-catch(e) {
-    true
-}
+catch(e) {errorPass()}
 
 
 
@@ -314,9 +329,7 @@ try {
         cSearch3_db = sessionStorage.removeItem("cSearch3");
         window.location.assign("search-tool.html");
     })
-} catch(e) {
-    true
-}
+} catch(e) {errorPass()}
 
 
 try {
@@ -336,7 +349,7 @@ try {
         true
     }
 } catch(e) {
-    true
+    errorPass()
 
 }
 
@@ -357,7 +370,7 @@ try{
 }
 
 catch(e){
-    true
+    errorPass()
     
 }
 

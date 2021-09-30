@@ -671,27 +671,13 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: lighten;
+    background: #e1f3ff;
 
 }
 
-.tbody-phy{
-    background: rgb(212 237 255 / 70%) url(../img/listbg1.jpg);
-    background-position: center;
-}
 
-.tbody-chem{
-    background: rgb(212 237 255 / 70%) url(../img/listbg2.jpg);
-    background-position: center;
-}
-
-.tbody-maths{
-    background: rgb(212 237 255 / 70%) url(../img/listbg3.jpg);
-    background-position: left;
-}
-
-.tbody-bio{
-    background: rgb(212 237 255 / 70%) url(../img/listbg4.jpg);
-    background-position: center;
+.subjects-body{
+    background: #c3e7ff;
 }
 
 .mainTable tr td ul{
@@ -809,6 +795,7 @@ footer{
     padding: 15px;
     box-shadow: 2px 3px 7px;
     border-radius: 10px;
+    background: #e1f3ff;
 
 }
 
@@ -898,13 +885,11 @@ footer{
     margin: 8% 5% 0;
     display: flex;
     padding: 2% 0;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 0.4%;
+    padding-right: 1.3%;
     border: 4px solid #47c4ff;
     border-radius: 9px;
     box-shadow: 3px 3px 7px #005e8b;
-    display: flex;
-    flex-direction: column;
     height: 376px;
     margin-bottom: 48px;
 
@@ -926,11 +911,9 @@ footer{
 
 
 .v-l-boxes-main{
-    display: flex;
-    align-items: center;
     margin-top: 8%;
-    overflow-y: hidden;
-    padding-bottom: 13px;
+    overflow-y: scroll;
+    padding-bottom: 20px;
 
 }
 
@@ -962,13 +945,13 @@ footer{
     font-family: "oswald", sans-serif;
     text-align: center;
     background: #47c4ff;
-    margin: 0% 5% 0 4.6%;
+    margin: 0% 5% 0 2.3%;
     font-size: 18px;
     font-family: 'oswald', sans-serif;
     padding: 13px;
     border-radius: 48px;
     box-shadow: 2px 2px 4px #005e8b;
-    padding: 13px 17px;
+    padding: 0px 10px;
     border: 4px solid #47c4ff;
     transition: all 0.3s;
 }
@@ -1053,7 +1036,8 @@ footer{
 
 
 .no-vid{
-    height: 376px;
+    width: 400px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1129,4 +1113,41 @@ footer{
     text-decoration: none;
     color: black;
     font-family: "roboto", sans-serif;
+}
+
+.vTitle{
+    text-decoration: none;
+    font-family: "roboto", sans-serif;
+    font-size: 19px;
+    margin-left: 17px;
+    background: #47c4ff;
+    margin-bottom: 10px;
+    border-radius: 14px;
+    padding: 2px 7px;
+    box-shadow: 2px 2px 4px #005e8b;
+    margin-right: 10px;
+
+}
+.vTitle:hover {
+    background: #35a2d5;
+    box-shadow: 2px 2px 9px #005e8b;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.c-logo{
+    height: 50px;
+    border: 4px solid #47c4ff;
+    border-radius: 30px;
+    box-shadow: 2px 1px 4px #005e8b;
+    position: absolute;
+    right: 8%;
+}
+
+.v-div{
+    
+}
+
+.vTitle-a{
+    text-decoration: none;
+    color: black;
 }
