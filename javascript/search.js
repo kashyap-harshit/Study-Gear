@@ -77,7 +77,7 @@ function vdo_not_found(vdo_sec_index){
 
 function videoSearch(key, search, pDiv, cId, cTag){
     $(pDiv).empty()
-    $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=1&channelId=" + cId + "&q=" + search, function(data){
+    $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=7&channelId=" + cId + "&q=" + search, function(data){
         data.items.forEach(item => {
             let vTitleText = item.snippet.title;
             let cIdForLogo = item.snippet.channelId;
