@@ -12,7 +12,7 @@ let edu = "intitle:EduMantra 11th & 12th SCIENCE";
 var video = "";
 var mSearch;
 var main_ms;
-let api_key = "AIzaSyBOw2lflsU6QypVGP41ly2ot0BtwqOHkmg"; //for testing
+let api_key = "AIzaSyBOw2lflsU6QypVGP41ly2ot0BtwqOHkmg";
 var uy_iframe = document.querySelector(".uy_iframe");
 let hVids = 0;
 let tHelp = document.querySelector(".help-t");
@@ -77,7 +77,7 @@ function vdo_not_found(vdo_sec_index){
 
 function videoSearch(key, search, pDiv, cId, cTag){
     $(pDiv).empty()
-    $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=10&channelId=" + cId + "&q=" + search, function(data){
+    $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=1&channelId=" + cId + "&q=" + search, function(data){
         data.items.forEach(item => {
             let vTitleText = item.snippet.title;
             let cIdForLogo = item.snippet.channelId;
