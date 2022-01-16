@@ -32,8 +32,8 @@ function errorPass(){
     true
 }
 
-function helpTextPhone(right_p){
-    tHelp.style.bottom = '0%';
+function helpTextPhone(){
+    tHelp.style.bottom = '0';
     tHelp.style.opacity = '100%';
     tpHelp.style.paddingRight = 'unset';
     tpHelp.style.paddingLeft = 'unset';
@@ -49,6 +49,7 @@ function helpTextPhone(right_p){
 }
 function helpText(){
     tHelp.style.right = "-1.5%";
+    
     setTimeout(()=>{
         tHelp.style.opacity = '0%';
         setTimeout(()=>{
@@ -77,7 +78,7 @@ function vdo_not_found(vdo_sec_index){
 
 function videoSearch(key, search, pDiv, cId, cTag){
     $(pDiv).empty()
-    $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=7&channelId=" + cId + "&q=" + search, function(data){
+    $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=1&channelId=" + cId + "&q=" + search, function(data){
         data.items.forEach(item => {
             let vTitleText = item.snippet.title;
             let cIdForLogo = item.snippet.channelId;
@@ -155,22 +156,16 @@ function searchWithGapComp(perSearch){
 }
 
 
+function helpTextPacked(){
+    if (sDuo.matches) {
+                
+        helpTextPhone();
+    }
+    else {
+        helpText();
+    }
+}
 
-try {
-    sHead.addEventListener("click", ()=>{
-        if (sDuo.matches) {
-            
-            helpTextPhone();
-
-
-        }
-        else {
-            helpText("-1.5%");
-        }
-        
-    })
-    
-} catch(e) {errorPass()}
 
 
 try{
@@ -251,6 +246,7 @@ try{
     hSearch_val = sessionStorage.getItem("hSearch");
     
     if (hSearch_val.length > 0 && hSearch_val != null && hSearch_val !== "null") {
+        helpText()
         search_input.value = hSearch_val;
         searchWithGap(hSearch_val);
         sessionStorage.setItem("hSearch2", hSearch_val);
@@ -271,7 +267,7 @@ try {
     
     if (hSearch3_val.length > 0 && hSearch3_val != null && hSearch3_val !== "null") {
         search_input.value = hSearch3_val;
-        helpText();
+        
         searchWithGapComp(hSearch3_val);
         sessionStorage.setItem("hSearch", hSearch3_val);
         hSearch3_val = sessionStorage.removeItem("hSearch3");
@@ -305,7 +301,7 @@ try {
     
     if (cSearch2_db.length > 0 && cSearch2_db != null && cSearch2_db != "null") {
         search_input.value = cSearch2_db;
-        helpText();
+        helpTextPacked();
         searchWithGapComp(cSearch2_db);
         sessionStorage.setItem("cSearch3", cSearch2_db);
         cSearch2_db = sessionStorage.removeItem("cSearch2");
