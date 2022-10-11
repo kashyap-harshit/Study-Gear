@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
 *{
 	margin: 0px;
 	padding: 0px;
+    
 }
 html{
 	scroll-behavior: smooth;
@@ -18,6 +21,7 @@ header{
 
 body{
 	background: #e1f3ff;
+    
 }
 
 main{
@@ -39,19 +43,22 @@ main{
     transition: 0.3s;
     background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 240 100' width='24' height='24' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' fill='black'/></g></svg>") no-repeat;
     background-position: right -10px top 50%;
-    width: 148px;
+    width: 162px;
     text-align: left;
+    font-family: 'Montserrat', sans-serif;
   
 }
 
 
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  box-shadow: 2px 3px 6px #005e8b;
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 2px 3px 6px #005e8b;
+    z-index: 1;
+    margin-top: 1px;
+    margin-left: 16px;
   
 }
 
@@ -98,7 +105,7 @@ main{
     border-radius: 5px;
     font-size: 16px;
     width: 160px;
-    padding: 0px 5px;
+    padding: 0px 10px;
 }
 
 .myList{
@@ -122,7 +129,7 @@ main{
 	text-decoration: none;
     font-size: 16px;
     color: black;
-    font-family: cairo semibold;
+    font-family: 'Montserrat', sans-serif;
     transition: 0.3s;
 
 }
@@ -151,6 +158,7 @@ main{
     color: black;
     border: 2px solid #006595;
     transition: 0.3s;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #searchButton:hover{
@@ -221,7 +229,8 @@ main{
     margin: 0px 8px;
     font-size: 15px;
     border-radius: 4px;
-    padding: 2px 0px;
+    padding: 5px 0px;
+    font-family: "Roboto",sans-serif;
 }
 
 .cards{
@@ -262,6 +271,7 @@ main{
     font-family: cairo;
     margin-top: -18px;
     margin-bottom: 12px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .underLine{
@@ -340,7 +350,7 @@ footer{
     background: rgb(71 196 255);
     color: #00283b;
     font-size: 16px;
-    font-family: cairo semibold;
+    font-family: 'Oxygen', sans-serif;
     padding: 7px 0px;
 }
 .provForBorder{
@@ -408,7 +418,7 @@ footer{
     border-radius: 4px;
     font-size: 15px;
     padding: 2px 5px;
-    font-family: cairo semibold;
+    font-family: 'Oxygen', sans-serif;
     position: relative;
     max-width: 92%;
     min-width: 92%;
@@ -425,10 +435,11 @@ footer{
     border: 2.6px solid #23b8ff;
     border-radius: 5px;
     cursor: pointer;
-    font-family: cairo semibold;
+    font-family: "Roboto",sans-serif;
     font-size: 16px;
     transition: all 0.3s;
     width: 95px;
+    padding: 5px 0px;
 }
 
 #contactSubmit:hover{
@@ -450,7 +461,7 @@ footer{
     border-radius: 4px;
     font-size: 15px;
     padding: 3px 5px;
-    font-family: cairo semibold;
+    font-family: 'Oxygen', sans-serif;
     max-width: 90%;
     max-height: 150px;
     min-height: 200px;
@@ -475,7 +486,7 @@ footer{
 }
 
 .whatRVS{
-	font-family: cairo semibold;
+	font-family: 'Oxygen', sans-serif;
     font-size: 17px;
 }
 
@@ -518,7 +529,7 @@ footer{
     transition: 0.3s;
     box-shadow: 2.3px 2.5px 4px #005e8b;
     text-transform: uppercase;
-    font-family: cairo;
+    font-family: "Roboto",sans-serif;
 
 }
 
@@ -750,6 +761,7 @@ footer{
     width: 145vh;
     font-size: 17px;
     font-weight: 500;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .mainTable tr td p{
@@ -1078,7 +1090,7 @@ footer{
 }
 
 .help-t-p {
-    font-family: cairo semibold;
+    font-family: 'Oxygen', sans-serif;
     padding: 2px 16px;
     font-size: 15px;
     text-transform: capitalize;
@@ -1140,12 +1152,12 @@ footer{
     background: none;
     margin: 0px 10px;
     margin-bottom: 8px;
-    box-shadow: 1px 1px 3px #005e8b;
+    /* box-shadow: 1px 1px 3px #005e8b; */
     transition: 0.3s;
 }
 .p-ref:hover{
-    box-shadow: 1px 1px 9px #005e8b;
-    background: #dbf0ff;
+    box-shadow: 1px 1px 5px #005e8b;
+    background: #b1deff;
 }
 .p-ref-div{
     display: flex;
@@ -1163,7 +1175,7 @@ footer{
 .p-href-a{
     text-decoration: none;
     color: black;
-    font-family: "roboto", sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .vTitle{
