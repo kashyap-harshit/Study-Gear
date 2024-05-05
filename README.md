@@ -12,4 +12,4 @@ Select the class first, then the subject or vice versa. After that you will be r
 ## Bugs?
 If you find any please report.
 
-## For Live Link : [[urlday.cc/studygear](https://urlday.cc/studygear)](https://kashyap-harshit.github.io/Study-Gear/)
+## For Live Link : [Study-Gear](https://kashyap-harshit.github.io/Study-Gear/)
